@@ -50,6 +50,7 @@ def create_or_add_portfolio(portfolios, username, action):
             else:
                 portfolios[username].append(stock_choice)
                 print(f"{stock_choice} has been added to your portfolio.")
+                add_more = input("Would you like to add another stock? (y/n): ").lower()
         elif addition == 'n':
             add_more = input("Would you like to add another stock? (y/n): ").lower()
 
